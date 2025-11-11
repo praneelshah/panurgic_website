@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Management - Panurgic</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1><span>Panurgic</span></h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="insurance.html">Insurance</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio Management</a></li>
+          <li><a href="claims.html">Claim
+
+<li><a href="claims.html">Claim Settlement</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner" style="position: relative; overflow: hidden; padding: 80px 0; text-align: center; margin-top: 75px;">
+    <img src="images/istockphoto-1293976473-640x640.jpg" alt="Insurance Banner" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 150%; object-fit: cover; z-index: 0;">
+    
+    <div class="container" style="position: relative; z-index: 1; color: white;">
+      <h1>Portfolio Management </h1>
+      <p>Expert strategies to maximize your investment returns</p>
+    </div>
+  </section>
+
+  <section class="portfolio-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="portfolio-content">
+            <h2>Strategic Portfolio Management</h2>
+            <p>At Panurgic, we understand that each investor has unique financial goals, risk tolerance, and time horizons. Our portfolio management services are designed to create personalized investment strategies that align with your specific objectives.</p>
+            <p>Our team of experienced financial advisors utilizes sophisticated analysis tools and market insights to build and maintain diversified portfolios that balance risk and return.</p>
+            <ul class="portfolio-benefits">
+              <li><i class="fas fa-chart-line"></i> Data-driven investment decisions</li>
+              <li><i class="fas fa-balance-scale"></i> Risk-optimized portfolio construction</li>
+              <li><i class="fas fa-sync-alt"></i> Regular rebalancing and adjustments</li>
+              <li><i class="fas fa-search-dollar"></i> Continuous market monitoring</li>
+              <li><i class="fas fa-shield-alt"></i> Downside protection strategies</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="why-choose-image" style="background: none; padding: 0; box-shadow: none; height: 90%; display: flex; align-items: center; justify-content: center;">
+            <img src="images/PortfolioMgmt2.jpeg" alt="Our Financial Team"
+                 class="animate-on-scroll"
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Investment Approach</h2>
+        <h3>A disciplined methodology for consistent results</h3>
+      </div>
+      <div class="approach-grid">
+       
+        <div class="approach-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="approach-icon">
+            <i class="fas fa-sitemap"></i>
+          </div>
+          <h3>Asset Allocation</h3>
+          <p>Our experts determine the optimal mix of asset classes based on your investment objectives and market conditions.</p>
+        </div>
+        <div class="approach-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="approach-icon">
+            <i class="fas fa-search-dollar"></i>
+          </div>
+          <h3>Research & Selection</h3>
+          <p>We conduct rigorous research and due diligence to select investments that offer the best potential for returns within your risk parameters.</p>
+        </div>
+        <div class="approach-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="approach-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Implementation</h3>
+          <p>We efficiently execute your investment strategy with careful attention to timing and costs.</p>
+        </div>
+        <div class="approach-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="approach-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Monitoring</h3>
+          <p>Our team continuously monitors your portfolio, evaluating performance against benchmarks and goals.</p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-strategies" style="padding-top: 60px;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Investment Strategies</h2>
+        <p>Tailored approaches for different investor profiles</p>
+      </div>
+      <div class="strategies-container">
+        <div class="strategy-tab-container">
+          <div class="strategy-tabs">
+            <button class="strategy-tab active" data-tab="conservative">Conservative</button>
+            <button class="strategy-tab" data-tab="balanced">Balanced</button>
+            <button class="strategy-tab" data-tab="growth">Growth</button>
+            <button class="strategy-tab" data-tab="aggressive">Aggressive</button>
+          </div>
+          
+          <div class="strategy-content active" id="conservative">
+            <div class="strategy-info">
+              <h3>Conservative Strategy</h3>
+              <p>Our conservative strategy focuses on capital preservation and stable income generation. This approach is designed for investors with a shorter time horizon or lower risk tolerance.</p>
+              <div class="strategy-allocation">
+                <div class="allocation-chart">
+                  <div class="allocation-segment" style="width: 50%; background-color: #4e92df;">
+                    <span>50% Bonds</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 30%; background-color: #3dbbdb;">
+                    <span>30% Cash</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 20%; background-color: #6843cf;">
+                    <span>20% Stocks</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="strategy-features">
+                <li><i class="fas fa-check-circle"></i> Focus on high-quality bonds and dividend stocks</li>
+                <li><i class="fas fa-check-circle"></i> Emphasis on income generation</li>
+                <li><i class="fas fa-check-circle"></i> Lower volatility</li>
+                <li><i class="fas fa-check-circle"></i> Capital preservation</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="strategy-content" id="balanced">
+            <div class="strategy-info">
+              <h3>Balanced Strategy</h3>
+              <p>Our balanced strategy seeks to provide a mix of growth and income with moderate risk. This approach is suitable for investors with a medium-term time horizon.</p>
+              <div class="strategy-allocation">
+                <div class="allocation-chart">
+                  <div class="allocation-segment" style="width: 40%; background-color: #6843cf;">
+                    <span>40% Stocks</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 40%; background-color: #4e92df;">
+                    <span>40% Bonds</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 15%; background-color: #e74da5;">
+                    <span>15% Alternatives</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 5%; background-color: #3dbbdb;">
+                    <span>5% Cash</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="strategy-features">
+                <li><i class="fas fa-check-circle"></i> Diversified exposure across asset classes</li>
+                <li><i class="fas fa-check-circle"></i> Balance between growth and income</li>
+                <li><i class="fas fa-check-circle"></i> Moderate volatility</li>
+                <li><i class="fas fa-check-circle"></i> Regular rebalancing</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="strategy-content" id="growth">
+            <div class="strategy-info">
+              <h3>Growth Strategy</h3>
+              <p>Our growth strategy aims to achieve long-term capital appreciation with a higher allocation to equities. This approach is designed for investors with a longer time horizon who can tolerate higher volatility.</p>
+              <div class="strategy-allocation">
+                <div class="allocation-chart">
+                  <div class="allocation-segment" style="width: 70%; background-color: #6843cf;">
+                    <span>70% Stocks</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 20%; background-color: #4e92df;">
+                    <span>20% Bonds</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 10%; background-color: #e74da5;">
+                    <span>10% Alternatives</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="strategy-features">
+                <li><i class="fas fa-check-circle"></i> Focus on growth-oriented equities</li>
+                <li><i class="fas fa-check-circle"></i> Global diversification</li>
+                <li><i class="fas fa-check-circle"></i> Higher expected returns</li>
+                <li><i class="fas fa-check-circle"></i> Tactical adjustments based on market conditions</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="strategy-content" id="aggressive">
+            <div class="strategy-info">
+              <h3>Aggressive Strategy</h3>
+              <p>Our aggressive strategy seeks maximum capital appreciation with a high allocation to equities and alternative investments. This approach is suitable for investors with a long time horizon and high risk tolerance.</p>
+              <div class="strategy-allocation">
+                <div class="allocation-chart">
+                  <div class="allocation-segment" style="width: 85%; background-color: #6843cf;">
+                    <span>85% Stocks</span>
+                  </div>
+                  <div class="allocation-segment" style="width: 15%; background-color: #e74da5;">
+                    <span>15% Alternatives</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="strategy-features">
+                <li><i class="fas fa-check-circle"></i> High exposure to growth sectors</li>
+                <li><i class="fas fa-check-circle"></i> Emerging market opportunities</li>
+                <li><i class="fas fa-check-circle"></i> Maximum growth potential</li>
+                <li><i class="fas fa-check-circle"></i> Strategic positioning for long-term appreciation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-performance">
+    <div class="container">
+      <div class="section-header">
+        <h2>Performance Tracking</h2>
+        <p>Transparent reporting and regular performance reviews</p>
+      </div>
+      <div class="performance-features" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <div class="performance-feature" style="flex: 1 1 30%; margin: 10px; background-color: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
+          <div class="performance-icon" style="font-size: 40px; color: #004080; margin-bottom: 15px;">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="performance-content">
+            <h3>Comprehensive Reports</h3>
+            <p>Receive detailed quarterly reports that outline your portfolio performance, asset allocation, and investment returns compared to relevant benchmarks.</p>
+          </div>
+        </div>
+        <div class="performance-feature" style="flex: 1 1 30%; margin: 10px; background-color: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
+          <div class="performance-icon" style="font-size: 40px; color: #004080; margin-bottom: 15px;">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="performance-content">
+            <h3>Online Dashboard</h3>
+            <p>Access your portfolio information 24/7 through our secure online portal, giving you real-time insights into your investments.</p>
+          </div>
+        </div>
+        <div class="performance-feature" style="flex: 1 1 30%; margin: 10px; background-color: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center;">
+          <div class="performance-icon" style="font-size: 40px; color: #004080; margin-bottom: 15px;">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="performance-content">
+            <h3>Regular Reviews</h3>
+            <p>Schedule periodic review meetings with your dedicated advisor to discuss performance, adjust strategies, and align with your evolving financial goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Optimize Your Investment Portfolio?</h2>
+        <p>Schedule a complimentary portfolio review with our investment experts today.</p>
+        <a href="contact.html" class="btn btn-cta">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h2>Panurgic</h2>
+          </div>
+          <p>Providing comprehensive financial solutions since 2003. Your trusted partner for insurance, portfolio management, and claim settlements.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          
+        
+        </div>
+        <div class="footer-column">
+          <h3>Navigate</h3>
+          <ul class="footer-links">
+           <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="insurance.html">Insurance</a></li>
+          <li><a href="portfolio.html">Portfolio Management</a></li>
+          <li><a href="claims.html">Claim Settlement</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      
+            <h4>Subscribe to our newsletter</h4>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" required>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Panurgic. All rights reserved.</p>
+       
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
