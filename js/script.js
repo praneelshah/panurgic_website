@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize location tabs
   initLocationTabs()
 
+  // Initialize WhatsApp floating action button
+  initWhatsAppButton()
+
   // Initialize contact form
   initContactForm()
 
@@ -45,6 +48,22 @@ function initMobileMenu() {
       })
     })
   }
+}
+
+// WhatsApp FAB
+function initWhatsAppButton() {
+  const existingFab = document.querySelector(".whatsapp-fab")
+  if (existingFab) return
+
+  const link = document.createElement("a")
+  link.href = "https://wa.me/9867788995?text=Hi%20Panurgic%2C%20I%27d%20like%20to%20know%20more."
+  link.className = "whatsapp-fab"
+  link.target = "_blank"
+  link.rel = "noopener"
+  link.setAttribute("aria-label", "Chat with us on WhatsApp")
+  link.innerHTML = '<i class="fab fa-whatsapp" aria-hidden="true"></i><span>Chat with us</span>'
+
+  document.body.appendChild(link)
 }
 
 // Scroll Animations
