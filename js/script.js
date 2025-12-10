@@ -187,17 +187,52 @@ function initLocationTabs() {
 function initContactForm() {
   const contactForm = document.getElementById("contactForm")
   const formSuccess = document.getElementById("formSuccess")
+  const submitButton = contactForm?.querySelector('button[type="submit"]')
+  const ajaxAction = contactForm?.dataset.ajaxAction || contactForm?.action
 
   if (contactForm && formSuccess) {
-    contactForm.addEventListener("submit", (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault()
 
-      // Simulate form submission (replace with actual form submission)
-      setTimeout(() => {
+      if (submitButton) {
+        submitButton.disabled = true
+        submitButton.textContent = "Sending..."
+      }
+
+      try {
+        const response = await fetch(ajaxAction, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: { Accept: "application/json" },
+        })
+
+        if (!response.ok) {
+          throw new Error("Failed to send message")
+        }
+
+        const data = await response.json()
+
+        if (data.success !== "true") {
+          throw new Error("Submission was not accepted")
+        }
+
+        contactForm.reset()
         contactForm.style.display = "none"
         formSuccess.style.display = "block"
-      }, 1000)
-    })
+      } catch (error) {
+        // Fallback to regular form submission (will navigate)
+        contactForm.removeEventListener("submit", handleSubmit)
+        contactForm.submit()
+        return
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false
+          submitButton.textContent = "Send Message"
+        }
+      }
+    }
+
+    contactForm.addEventListener("submit", handleSubmit)
   }
 }
 
